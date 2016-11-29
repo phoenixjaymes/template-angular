@@ -1,0 +1,55 @@
+/*
+  Filename: _config.scss
+  Date: 20 Jul 16
+  Programmer: Jaymes Young
+*/
+
+
+// ====================
+// Global Config
+// ====================
+
+// Font stacks
+$font-url--google           : 'https://fonts.googleapis.com/css?family=Lato|Open+Sans:400,400i,700,700i';
+$font-family--primary       : 'Open Sans', sans-serif;
+$font-family--secondary     : 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+$stack-sans-serif           : 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$stack-lato                 : 'Lato', $stack-sans-serif;
+$stack-open-sans            : 'Open Sans', $stack-sans-serif;
+
+// Font weights
+$fonr-weight--medium        : 400; 
+$fonr-weight--bold          : 700; 
+
+// Decriptive color variables
+$white              : #fff;
+$colorOffWhite      : #f4f3ef;
+$black              : #000;
+$starship           : #c2f24b;
+$mustard            : #ffdd4f;
+$gorse              : #fffb4f;
+$studio             : #8440b5;
+
+// Functional color variables
+$primary-color              : $gorse;
+$header-footer-bg-color     : rgba($black, 70);
+$border-color               : $mustard;
+$header-text-color          : $studio;
+$thing-bg-color             : $mustard;
+$header-ellipsis            : $gorse;
+
+
+// Text
+$base__font-size    : 16px;
+$base__line         : 24px;
+
+// Media query breakpoints
+$brk-sm            : '(min-width: 544px)';
+$brk-md            : '(min-width: 720px)';
+$brk-lg            : '(min-width: 940px)';
+$brk-xl            : '(min-width: 1140px)';
+
+
+// Misc variables
+$brd-radius             : 5px;

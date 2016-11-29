@@ -1,0 +1,78 @@
+/*
+  Filename: _base.scss
+  Date: 20 Jul 16
+  Programmer: Jaymes Young
+*/
+
+
+// ===============================
+// Base Styles
+// ===============================
+body {    
+  font-size: $base__font-size;
+  line-height: ($base__line/$base__font-size);
+  font-family: $font-family--primary;
+}
+
+h1, h2, h3 {
+  font-family: $font-family--secondary;
+}
+
+h1 {
+  @include text(2em, 1, normal);
+  margin-bottom: 20px;
+  
+  @media #{$brk-sm} {
+    @include text(2.5em, 1.125em)
+  }
+  
+  @media #{$brk-md} {
+    @include text(3em, 1.05em);
+  }
+}
+
+h2 {
+  @include text(1.625em, 1.15384615em, normal);
+  
+  @media #{$brk-sm} {
+    @include text(2em, 1.125em);
+  }
+  
+  @media #{$brk-md} {
+    @include text(2.5em);
+  }
+}
+
+h3 {
+  @include text(1.375em, 1.15384615em, normal);
+  margin-bottom: 15px;
+  
+  @media #{$brk-sm} {
+    @include text(1.5em, 1.125em)
+  }
+  
+  @media #{$brk-md} {
+    @include text(1.75em);
+  }
+}
+
+
+p {
+  margin-bottom: em(30px);
+}
+
+a {
+  text-decoration: none;
+
+  &:link, &:visited {
+
+  }
+
+  &:hover, &:active {
+
+  }
+}
+
+small {
+  font-size: em(12px);
+}

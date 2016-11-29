@@ -1,0 +1,138 @@
+/*
+  Filename: _reset.scss
+  Date: 20 Jul 16
+  Programmer: Jaymes Young
+*/
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, main {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* GENERIC STYLESHEET */
+ 
+/*
+
+BOX-SIZING CHANGE (box-sizing property)
+
+The following CSS changes the default box-sizing of box elements from
+content-box to border-box.
+
+border-box automatically includes border *and* padding sizes into your
+box property widths. No more subtracting padding and border sizes from
+your box widths! Now you can use responsive grids without fear of 
+making your columns too wide and causing that annoying left-right
+scroll bar at the bottom of the page.
+
+Remember: this does not take margins into account since margins are 
+not technically part of the box. For those, you will still have to 
+do some subtraction. 
+
+*/
+
+* {
+    box-sizing: border-box;
+}
+ 
+/*
+
+TEXT RENDERING (text-rendering property)
+
+Some fonts are built to handle certain combinations of lettering through
+the use of something called ligatures. For instance, the letters "fi" in
+a serif font can look odd if the top curve of the f runs into the dot of
+the i next to it. A ligature styles them both beautifully. Your browser
+generally does this for you but not on font sizes smaller than 20pt. This
+text-rendering code changes that. This one is entirely optional and you
+can remove this first line if you're not comfortable with it.
+
+
+FONT SMOOTHING (font-smoothing property)
+
+At this point in time, the font smoothing your browser does by default
+is imperfect and makes the font too thick. Using font-smoothing in CSS is
+subtle on a standard display but impressive in a high-definition display.
+There are two declarations to cover usage in Webkit and Mozilla browsers.
+
+*/
+
+html {
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/*
+
+USE IMAGES, EMBEDS AND OBJECTS FREELY WITHOUT WORRYING ABOUT SIZES AND
+BREAKING YOUR LAYOUTS (max-width property)
+
+The following ensures that images and embedded content you add can't be 
+wider than the box element they are currently in. This is important for 
+responsive design, as this allows you to use images without having to 
+specify width and height attributes in the HTML.
+
+*/
+
+img, embed, object {
+    max-width: 100%;
+}
+
+/*
+
+DEFAULT BEHAVIOR OF SELECTED HYPERLINKS (outline property)
+
+No more ugly dotted outlines on your active links. This is not very 
+noticeable until it's pointed out, but it makes for a cleaner user
+experience.
+
+*/
+
+a {
+    outline: none;
+}
